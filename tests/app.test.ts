@@ -6,10 +6,10 @@ describe('App Tests', () => {
   const hono = new Hono();
   hono.route('/', app);
 
-  it('should respond with "Hello Hono! from jay and my name is jaysharma " for GET /', async () => {
+  it('should respond with "Hello Hono! from jay and my name is jaysharma" for GET /', async () => {
     const res = await hono.request('/');
     expect(res.status).toBe(200);
-    expect(await res.text()).toBe('Hello Hono! from jay and my name is jaysharma ');
+    expect(await res.text()).toBe('Hello Hono! from jay and my name is jaysharma');
   });
 
 
