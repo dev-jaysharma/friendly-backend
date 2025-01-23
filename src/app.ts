@@ -9,8 +9,10 @@ app.use(logger());
 app.use(prettyJSON());
 
 app.get("/", (c) => {
-  return c.text("Hello Hono! from jay ");
+  return c.text("Hello Hono! from jay and my name is jaysharma ");
 });
+
+
 
 app.route("/api/coil", coilRoute);
 
