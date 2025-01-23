@@ -9,7 +9,7 @@ app.use(logger());
 app.use(prettyJSON());
 
 app.get("/", (c) => {
-  return c.text("Hello Hono! from jay and my name is jaysharma ");
+  return c.text("Hello Hono! from jay and my name is jaysharma");
 });
 
 
