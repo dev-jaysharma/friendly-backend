@@ -9,9 +9,7 @@ app.use(logger());
 app.use(prettyJSON());
 
 app.get("/", (c) => {
-  return c.json([{
-    "message" : "hello from idx hono mac project"
-  }]);
+  return c.text("Hello Hono! from jay and my name is jaysharma ");
 });
 
 

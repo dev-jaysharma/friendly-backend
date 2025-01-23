@@ -16,7 +16,7 @@ const coilRoute = new Hono()
   .post("/", zValidator("json" , coilSchema) , async (c) => {
     const data = await c.req.valid("json");
     const coil = coilSchema.parse(data);
-    return c.json(coil, 201);
+    return c.json(coil, 200);
   });
 
 export default coilRoute;

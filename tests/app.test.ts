@@ -26,7 +26,12 @@ describe('App Tests', () => {
       const res = await hono.request('/api/coil', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ /* valid data */ })
+          body: JSON.stringify({
+            "name": "hello",
+            "sets": 3,
+            "weight":1,
+            "delivered": true
+          })
         });
       expect(res.status).toBe(200); //Or appropriate status code
     });
